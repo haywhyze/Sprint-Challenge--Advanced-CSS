@@ -21,16 +21,28 @@
             margin-bottom: 1.5rem;
         }
 
-        .logo a {
+        .logo h1 {
             font-size: 4rem;
+
+            @media @phone {
+                font-size: 3rem;
+            }
 
             &:hover {
                 font-size: 4.1rem;
+
+                @media @phone {
+                    font-size: 3.1rem;
+                }
             }
         }
 
         .navbar a {
             padding: 0 1.6rem;
+
+            @media @phone {
+                padding: 0 .5rem;
+            }
 
             &:hover {
                 font-size: 1.8rem;

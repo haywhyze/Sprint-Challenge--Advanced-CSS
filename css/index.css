@@ -187,14 +187,29 @@ img {
 #nav-container .header .logo {
   margin-bottom: 1.5rem;
 }
-#nav-container .header .logo a {
+#nav-container .header .logo h1 {
   font-size: 4rem;
 }
-#nav-container .header .logo a:hover {
+@media (max-width: 500px) {
+  #nav-container .header .logo h1 {
+    font-size: 3rem;
+  }
+}
+#nav-container .header .logo h1:hover {
   font-size: 4.1rem;
+}
+@media (max-width: 500px) {
+  #nav-container .header .logo h1:hover {
+    font-size: 3.1rem;
+  }
 }
 #nav-container .header .navbar a {
   padding: 0 1.6rem;
+}
+@media (max-width: 500px) {
+  #nav-container .header .navbar a {
+    padding: 0 0.5rem;
+  }
 }
 #nav-container .header .navbar a:hover {
   font-size: 1.8rem;
@@ -228,6 +243,19 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images > img {
+    display: none;
+  }
+  .home .space-images > img:nth-of-type(1) {
+    display: block;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -263,7 +291,7 @@ footer {
   text-align: center;
   padding: 1rem 2rem;
   font-size: 1.8rem;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   transition: 0.3s all ease-in-out;
   cursor: pointer;
 }
@@ -271,6 +299,21 @@ footer {
   background-color: #F6F6F6;
   color: #22283A;
   border: 1px solid #22283A;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    margin-top: 1.5rem;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
@@ -280,4 +323,24 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    margin-left: 0;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk {
+    margin-top: 1rem;
+    padding: 15px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
 }

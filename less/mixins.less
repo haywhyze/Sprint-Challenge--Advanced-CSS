@@ -7,6 +7,12 @@
     align-items: @alignItems;
 }
 
+.fullWidthMobile() {
+    @media @phone {
+        width: 100%;
+    }
+}
+
 .createButton(@bgColor, @color) {
     display: inline-block;
     background-color: @bgColor;
@@ -14,7 +20,7 @@
     text-align: center;
     padding: 1rem 2rem;
     font-size: 1.8rem;
-    border-radius: 1rem;
+    border-radius: .5rem;
     transition: .3s all ease-in-out;
     cursor: pointer;
 
@@ -23,4 +29,6 @@
         color: @bgColor;
         border: 1px solid @bgColor;
     }
+
+    .fullWidthMobile();
 }
