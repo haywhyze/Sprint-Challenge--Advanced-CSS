@@ -1,0 +1,33 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 0;
+  align-items: baseline;
+  transition: .3s all;
+}
+header .header a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.6rem;
+  transition: .3s all;
+}
+header .header .logo a {
+  font-family: 'Indie Flower', cursive;
+  font-size: 4rem;
+}
+header .header .logo a:hover {
+  font-size: 4.1rem;
+}
+header .header .navbar a {
+  padding: 0 1.6rem;
+}
+header .header .navbar a:hover {
+  font-size: 1.8rem;
+}
